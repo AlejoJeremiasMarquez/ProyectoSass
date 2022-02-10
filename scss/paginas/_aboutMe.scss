@@ -1,0 +1,17 @@
+.hijoDosIndex h1{
+    margin-top: 10px;
+    animation: contactame 2s ease-in 0s infinite normal forwards;
+}
+@keyframes contactame {
+    0% {
+        transform: scale(1);
+      }
+    
+      50% {
+        transform: scale(1.1);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }

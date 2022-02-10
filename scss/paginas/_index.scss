@@ -1,0 +1,42 @@
+.hijoDosIndex main{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%);
+    height: 100%;
+}
+.hijoDosIndex pre{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hijoDosIndex a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.padreFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: padreFlex 2s ease 1s infinite normal backwards;
+}
+@keyframes padreFlex {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+pre{
+    margin: 12rem;
+}
+pre:hover{
+    font-size: 45px;
+    transition: .5s;
+}
+pre a:hover{
+    color: aqua;
+}

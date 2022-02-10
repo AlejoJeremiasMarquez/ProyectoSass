@@ -1,0 +1,274 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.gridContenedorIndex {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-size: 25px; }
+
+.hijoUnoIndex {
+  grid-area: 1 / 1 / 2 / 6; }
+
+.hijoDosIndex {
+  grid-area: 2 / 1 / 7 / 6; }
+
+.hijoDosIndex, .jobs {
+  background: black;
+  background: linear-gradient(90deg, black 0%, #000382 57%, #00fdff 100%);
+  height: 100%; }
+
+.hijoTresIndex {
+  grid-area: 7 / 1 / 8 / 6; }
+  .hijoTresIndex p {
+    margin-top: 60px; }
+
+.logo {
+  height: 5rem;
+  margin: 0;
+  display: flex; }
+  .logo:hover {
+    background-color: #383838;
+    border-radius: 100%;
+    transition: .3s; }
+  .logo:not(hover) {
+    height: 5.0rem;
+    transition: .3s; }
+
+header {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white; }
+  header .nav-link:hover {
+    color: aqua !important;
+    font-size: 1.7rem;
+    transition: .3s; }
+    header .nav-link:hover:not(hover) {
+      transition: .3s; }
+  header li {
+    display: flex;
+    align-items: center; }
+  header .redesSociales {
+    display: flex;
+    justify-content: space-evenly; }
+    header .redesSociales .facebook {
+      color: blue;
+      font-size: 2rem;
+      margin-top: 20%;
+      margin-right: 10%; }
+      header .redesSociales .facebook:hover {
+        color: aqua;
+        font-size: 2.1rem;
+        transition: .3s; }
+      header .redesSociales .facebook:not(hover) {
+        transition: .3s; }
+    header .redesSociales .instagram {
+      color: deeppink;
+      font-size: 2rem;
+      margin-top: 20%;
+      margin-right: 10%; }
+      header .redesSociales .instagram:hover {
+        color: aqua;
+        font-size: 2.1rem;
+        transition: .3s; }
+      header .redesSociales .instagram:not(hover) {
+        transition: .3s; }
+    header .redesSociales .whatsapp {
+      color: greenyellow;
+      font-size: 2rem;
+      margin-top: 20%;
+      margin-right: 20%; }
+      header .redesSociales .whatsapp:hover {
+        color: aqua;
+        font-size: 2.1rem;
+        transition: .3s; }
+      header .redesSociales .whatsapp:not(hover) {
+        transition: .3s; }
+
+main {
+  text-align: center;
+  color: white;
+  background-color: black; }
+
+footer {
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%; }
+
+.hijoTresIndex {
+  grid-area: 7 / 1 / 8 / 6; }
+
+.hijoTresIndex p {
+  margin-top: 60px; }
+
+@media all and (max-width: 1100px) {
+  label {
+    font-size: 20px;
+    margin: 0px;
+    text-align: center; } }
+
+@media all and (max-width: 700px) {
+  .hijoDosIndex pre {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%; }
+  .aboutMe {
+    background: black;
+    background: linear-gradient(90deg, black 0%, #000382 57%, #00fdff 100%);
+    height: 100vh; }
+  .aboutMe h2 {
+    font-size: 20px; }
+  .aboutMe h3 {
+    font-size: 15px; }
+  .aboutMe p {
+    font-size: 15px; }
+  label {
+    font-size: 15px;
+    margin: 0px;
+    text-align: center; } }
+
+@media all and (max-width: 450px) {
+  .linkNav {
+    font-size: 12px; }
+  footer {
+    font-size: 12px; } }
+
+.hijoDosIndex main {
+  background: black;
+  background: linear-gradient(90deg, black 0%, #000382 57%, #00fdff 100%);
+  height: 100%; }
+
+.hijoDosIndex pre {
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.hijoDosIndex a {
+  text-decoration: none;
+  color: aliceblue; }
+
+.padreFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: padreFlex 2s ease 1s infinite normal backwards; }
+
+@keyframes padreFlex {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+pre {
+  margin: 12rem; }
+
+pre:hover {
+  font-size: 45px;
+  transition: .5s; }
+
+pre a:hover {
+  color: aqua; }
+
+.form-label {
+  color: bisque; }
+
+label {
+  font-size: 20px;
+  margin: 0px 500px;
+  text-align: center; }
+
+input {
+  width: 30%;
+  padding: 5px 10px;
+  margin: 1.5% 10%;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.hijoDosIndex main {
+  background: black;
+  background: linear-gradient(90deg, black 0%, #000382 57%, #00fdff 100%);
+  height: 100%; }
+
+.hijoDosIndex pre {
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.hijoDosIndex a {
+  text-decoration: none;
+  color: aliceblue; }
+
+.padreFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: padreFlex 2s ease 1s infinite normal backwards; }
+
+@keyframes padreFlex {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+pre {
+  margin: 12rem; }
+
+pre:hover {
+  font-size: 45px;
+  transition: .5s; }
+
+pre a:hover {
+  color: aqua; }
+
+iframe {
+  margin: 20px 10px;
+  border-radius: 10px; }
+
+iframe:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .5s; }
+
+iframe:not(hover) {
+  transition: .5s; }
+
+.hijoDosIndex iframe:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.98); }
+
+iframe {
+  margin: 20px 10px;
+  border-radius: 10px; }
+
+iframe:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .5s; }
+
+iframe:not(hover) {
+  transition: .5s; }
+
+.hijoDosIndex iframe:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.98); }
+
+.showreel {
+  margin: 10px; }
