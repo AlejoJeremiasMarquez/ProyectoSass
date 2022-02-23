@@ -1,15 +1,13 @@
 iframe{
-    margin: 20px 10px;
-    border-radius: 10px;
+    @extend %iframe;
 }
 
 iframe:hover{
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1);
-    transition: .5s;
-}
-iframe:not(hover){
-    transition: .5s;
+    @extend %iframeHover;
+    
+    iframe:not(hover){
+        transition: .5s;
+    }
 }
 
 .hijoDosIndex iframe:hover{

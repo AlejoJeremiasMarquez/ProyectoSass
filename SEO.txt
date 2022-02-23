@@ -1,0 +1,3 @@
+Para el sitio agregué:
+-Descripción en los htmls según el sitio.
+-Palabras claves (keywords): portfolio, video, editor, montaje, motiongraphics, fotografia.

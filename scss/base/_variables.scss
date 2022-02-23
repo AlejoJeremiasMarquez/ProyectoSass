@@ -1,4 +1,29 @@
-$colorHeader: black;
-$colorBackground: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%);
-$colorHover: aqua;
-$colorLetras: white;
+$colores: (
+    header: black,
+    bg: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,3,130,1) 57%, rgba(0,253,255,1) 100%),
+    hover: aqua,
+    letras: white,
+);
+
+%iframe{
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+%iframeHover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition: .5s;
+}
+
+%redes{
+    font-size: 2rem;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+
+@mixin flexbox($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

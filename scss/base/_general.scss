@@ -16,8 +16,8 @@
     grid-area: 2 / 1 / 7 / 6;
 }
 .hijoDosIndex, .jobs{
-    background: $colorHeader;
-    background: $colorBackground;
+    background: map-get($colores, header);
+    background: map-get($colores, bg);
     height: 100%;
 }
 .hijoTresIndex{
@@ -45,35 +45,31 @@
 header{
     width: 100%;
     height: 100%;
-    background-color: $colorHeader;
-    color: $colorLetras;
+    background-color: map-get($colores, header);
+    color: map-get($colores, hover);
 
     .nav-link:hover{
-        color: $colorHover !important;
+        color: map-get($colores, hover) !important;
         font-size: 1.7rem;
         transition: .3s;
 
-        &:not(hover){
-            transition: .3s;
-        }
+    }
+    .nav-link:not(hover){
+        transition: .3s;
     }
     li{
-        display: flex;
-        align-items: center;
+        @include flexbox(center, center);
     }
 
     .redesSociales{
-        display: flex;
-        justify-content:space-evenly;
+        @include flexbox(space-evenly, none);
     
         .facebook{
             color: blue;
-            font-size: 2rem;
-            margin-top: 20%;
-            margin-right: 10%;
+            @extend %redes;
             
                 &:hover{
-                    color: $colorHover;
+                    color: map-get($colores, hover);
                     font-size: 2.1rem;
                     transition: .3s;
                 }
@@ -84,12 +80,10 @@ header{
             
         .instagram{
             color: deeppink;
-            font-size: 2rem;
-            margin-top: 20%;
-            margin-right: 10%;
+            @extend %redes;
     
                 &:hover{
-                    color: $colorHover;
+                    color: map-get($colores, hover);
                     font-size: 2.1rem;
                     transition: .3s;
                 }
@@ -105,7 +99,7 @@ header{
             margin-right: 20%;
             
                 &:hover{
-                color: $colorHover;
+                color: map-get($colores, hover);
                 font-size: 2.1rem;
                 transition: .3s;
             }
@@ -115,21 +109,18 @@ header{
         }
     }
 }
-
-
     
 main{
     text-align: center;
-    color: $colorLetras;
-    background-color: $colorHeader;
+    color: map-get($colores, letras);
+    background-color: map-get($colores, header);
 }
 footer{
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: $colorHeader;
-    color: $colorLetras;
-    display: flex;
-    justify-content: center;
+    background-color: map-get($colores, header);
+    color: map-get($colores, letras);
+    @include flexbox(center, none);
     text-transform: uppercase;
     box-sizing: border-box;
     position: relative;
@@ -149,6 +140,7 @@ footer{
         margin: 0px;
         text-align: center;
     }
+
 }
 @media all and (max-width:700px) { 
     .hijoDosIndex pre{
