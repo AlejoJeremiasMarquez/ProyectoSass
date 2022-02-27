@@ -34,8 +34,11 @@ pre{
     margin: 12rem;
 }
 pre:hover{
-    font-size: 45px;
+    font-size: 42px;
     transition: .5s;
+}
+pre:not(hover){
+  transition: .5s;
 }
 pre a:hover{
     color: aqua;

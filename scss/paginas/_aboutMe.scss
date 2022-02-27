@@ -1,7 +1,8 @@
-.hijoDosIndex h1{
-    margin-top: 10px;
-    animation: contactame 2s ease-in 0s infinite normal forwards;
+.blockquote-footer h1{
+  margin-top: 10px;
+  animation: contactame 5s ease-in 0s infinite normal forwards;
 }
+
 @keyframes contactame {
     0% {
         transform: scale(1);
